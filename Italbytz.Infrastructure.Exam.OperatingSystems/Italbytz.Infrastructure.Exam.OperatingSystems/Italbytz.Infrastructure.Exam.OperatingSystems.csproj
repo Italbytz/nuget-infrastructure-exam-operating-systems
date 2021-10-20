@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
+    <PackOnBuild>true</PackOnBuild>
+    <PackageVersion>0.0.1</PackageVersion>
+    <Authors>Robin Nunkesser</Authors>
+    <PackageLicenseUrl>https://github.com/Italbytz/nuget-infrastructure-exam-operating-systems/blob/main/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/Italbytz/nuget-infrastructure-exam-operating-systems</PackageProjectUrl>
+    <Description>A set of helpful infrastructure implementations for exams to use with Ports and Adapters.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Buddy\" />
+    <None Remove="PageReplacement\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Buddy\" />
+    <Folder Include="PageReplacement\" />
+  </ItemGroup>
+</Project>
